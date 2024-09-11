@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "deadlock-example-vsp", "deadlock-example-vsp.vcxproj", "{A32ACC7E-5BE5-4289-968D-32B0E4E4E019}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A32ACC7E-5BE5-4289-968D-32B0E4E4E019}.Debug|x64.ActiveCfg = Debug|x64
+		{A32ACC7E-5BE5-4289-968D-32B0E4E4E019}.Debug|x64.Build.0 = Debug|x64
+		{A32ACC7E-5BE5-4289-968D-32B0E4E4E019}.Debug|x86.ActiveCfg = Debug|Win32
+		{A32ACC7E-5BE5-4289-968D-32B0E4E4E019}.Debug|x86.Build.0 = Debug|Win32
+		{A32ACC7E-5BE5-4289-968D-32B0E4E4E019}.Release|x64.ActiveCfg = Release|x64
+		{A32ACC7E-5BE5-4289-968D-32B0E4E4E019}.Release|x64.Build.0 = Release|x64
+		{A32ACC7E-5BE5-4289-968D-32B0E4E4E019}.Release|x86.ActiveCfg = Release|Win32
+		{A32ACC7E-5BE5-4289-968D-32B0E4E4E019}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {063030FF-E1AF-448A-9A2E-479DFBD9026F}
+	EndGlobalSection
+EndGlobal

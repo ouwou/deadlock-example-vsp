@@ -17,6 +17,8 @@ SourceHook::Impl::CSourceHookImpl g_SHImp;
 SourceHook::ISourceHook *g_SHPtr = &g_SHImp;
 
 CON_COMMAND_F(example, "", FCVAR_GAMEDLL | FCVAR_CLIENT_CAN_EXECUTE) {
+    if (context.GetPlayerSlot() == -1) return;
+
     if (auto *controller = reinterpret_cast<deadlock::CCitadelPlayerController *>(GameEntitySystem()->GetEntityInstance(CEntityIndex(context.GetPlayerSlot().Get() + 1)))) {
         if (auto *pawn = controller->GetPawn()) {
             pawn->GiveCurrency(deadlock::ECurrencyType::EGold, 100000);
@@ -25,7 +27,7 @@ CON_COMMAND_F(example, "", FCVAR_GAMEDLL | FCVAR_CLIENT_CAN_EXECUTE) {
 }
 
 CON_COMMAND_F(giveme, "", FCVAR_GAMEDLL | FCVAR_CLIENT_CAN_EXECUTE) {
-    if (args.ArgC() < 2) return;
+    if (context.GetPlayerSlot() == -1 || args.ArgC() < 2) return;
 
     if (auto *controller = reinterpret_cast<deadlock::CCitadelPlayerController *>(GameEntitySystem()->GetEntityInstance(CEntityIndex(context.GetPlayerSlot().Get() + 1)))) {
         if (auto *pawn = controller->GetPawn()) {

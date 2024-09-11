@@ -9,7 +9,7 @@ class CGameEntitySystem;
 
 class CGameResourceService {
 public:
-    CGameEntitySystem* GetGameEntitySystem() {
+    CGameEntitySystem *GetGameEntitySystem() {
         return *reinterpret_cast<CGameEntitySystem **>(reinterpret_cast<uintptr_t>(this) + 88);
     }
 };
@@ -24,8 +24,11 @@ extern AppSystemConnectFn g_pfnServerConfigConnect;
 
 namespace interfaces {
 extern CGameResourceService *g_pGameResourceService;
-extern ICvar *g_pCvar;
-};
+extern ICvar *&g_pCvar;
+}; // namespace interfaces
+
+// defined in global scope for convar.cpp
+extern ICvar *g_pCVar;
 
 // required by entityidentity.cpp
 CGameEntitySystem *GameEntitySystem();

@@ -1,0 +1,10 @@
+[submodule "hl2sdk"]
+	path = hl2sdk
+	url = https://github.com/ouwou/hl2sdk
+	branch = cs2
+[submodule "source2sdk-deadlock"]
+	path = source2sdk-deadlock
+	url = https://github.com/ouwou/source2sdk-deadlock
+[submodule "metamod-source"]
+	path = metamod-source
+	url = https://github.com/alliedmodders/metamod-source

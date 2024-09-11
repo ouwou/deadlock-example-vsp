@@ -1,6 +1,10 @@
 ## example server plugin for Deadlock
 
-adds two console commands: `example` which gives the player 100000 souls and `giveme` which gives the player the named item (eg giveme upgrade_magic_carpet)
+adds some console commands:
+
+- `example` gives the player 100000 souls 
+- `giveme` gives the player the named item (eg giveme upgrade_magic_carpet)
+- `gimmemodifier` gives the player the named modifier (eg giveme modifier_citadel_bubble)
 
 ### Usage:
 

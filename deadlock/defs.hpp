@@ -4,7 +4,10 @@
 
 #include "../globals.hpp"
 
+using CSoundEventName = uint8_t[0x10];
+using CGlobalSymbol = uint8_t[0x08];
 using CNetworkedQuantizedFloat = uint8_t[0x08];
+using CPanoramaImageName = uint8_t[0x10];
 
 template<typename T>
 struct CHandle {

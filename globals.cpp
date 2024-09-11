@@ -8,6 +8,7 @@ AppSystemConnectFn g_pfnServerConfigConnect = nullptr;
 
 namespace interfaces {
 CGameResourceService *g_pGameResourceService = nullptr;
+ISource2GameClients *g_pSource2GameClients = nullptr;
 ICvar *&g_pCvar = ::g_pCVar;
 }; // namespace interfaces
 

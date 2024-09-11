@@ -5,6 +5,7 @@
 
 class IAppSystem;
 class ICvar;
+class ISource2GameClients;
 class CGameEntitySystem;
 
 class CGameResourceService {
@@ -24,6 +25,7 @@ extern AppSystemConnectFn g_pfnServerConfigConnect;
 
 namespace interfaces {
 extern CGameResourceService *g_pGameResourceService;
+extern ISource2GameClients *g_pSource2GameClients;
 extern ICvar *&g_pCvar;
 }; // namespace interfaces
 

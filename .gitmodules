@@ -8,3 +8,6 @@
 [submodule "metamod-source"]
 	path = metamod-source
 	url = https://github.com/alliedmodders/metamod-source
+[submodule "funchook"]
+	path = funchook
+	url = https://github.com/kubo/funchook

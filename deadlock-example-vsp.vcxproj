@@ -72,8 +72,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>$(ProjectDir)\generated;$(ProjectDir)\source2sdk-deadlock\include;$(ProjectDir)\metamod-source\core\sourcehook;$(ProjectDir)\hl2sdk\game\shared;$(ProjectDir)\hl2sdk\public;$(ProjectDir)\hl2sdk\public\entity2;$(ProjectDir)\hl2sdk\public\mathlib;$(ProjectDir)\hl2sdk\public\tier0;$(ProjectDir)\hl2sdk\public\tier1;$(ProjectDir)\hl2sdk\thirdparty\protobuf-3.21.8\src;$(IncludePath)</IncludePath>
-    <LibraryPath>$(ProjectDir)\hl2sdk\lib\public\win64;$(ProjectDir)\hl2sdk\lib\public\win64\2015;$(ProjectDir)\hl2sdk\thirdparty\protobuf-3.21.8\build\Release;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir);$(ProjectDir)\funchook\include;$(ProjectDir)\generated;$(ProjectDir)\source2sdk-deadlock\include;$(ProjectDir)\metamod-source\core\sourcehook;$(ProjectDir)\hl2sdk\game\shared;$(ProjectDir)\hl2sdk\public;$(ProjectDir)\hl2sdk\public\entity2;$(ProjectDir)\hl2sdk\public\mathlib;$(ProjectDir)\hl2sdk\public\tier0;$(ProjectDir)\hl2sdk\public\tier1;$(ProjectDir)\hl2sdk\thirdparty\protobuf-3.21.8\src;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)\hl2sdk\lib\public\win64;$(ProjectDir)\hl2sdk\lib\public\win64\2015;$(ProjectDir)\hl2sdk\thirdparty\protobuf-3.21.8\build\Release;$(ProjectDir)\funchook\build\Release;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -131,10 +131,11 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>libprotobuf.lib;tier0.lib;tier1.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libprotobuf.lib;tier0.lib;tier1.lib;funchook.lib;distorm.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="deadlock\classes.cpp" />
     <ClCompile Include="globals.cpp" />
     <ClCompile Include="hl2sdk\entity2\entityidentity.cpp" />
     <ClCompile Include="hl2sdk\entity2\entitysystem.cpp" />

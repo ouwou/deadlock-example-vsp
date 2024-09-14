@@ -2,6 +2,10 @@
 #include <cstdint>
 #include <string_view>
 
+#include <convar.h>
+#include <mathlib/vector4d.h>
+#include <variant.h>
+
 #include "../deadlock/defs.hpp"
 
 // intentionally left undefined. if you want to access static fields, add your own sdk.
